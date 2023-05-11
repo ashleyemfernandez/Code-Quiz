@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CODE QUIZ</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="large-font">CODE QUIZ</div>
+      <div id="start-button"><button>Start</button></div>
+    </header>
+
+    <main>
+      <section>
+        <div id="container">
+          <div id="question"></div>
+          <div id="choices">
+          <div class="choice" id="A" onclick="selectA"></div>
+          <div class="choice" id="B" onclick="selectB"></div>
+          <div class="choice" id="C" onclick="selectC"></div>
+          <div class="choice" id="D" onclick="selectD"></div>
+          <div class="choice" id="E" onclick="selectE"></div>
+          </div>
+        </div>
+
+        <div class="results">
+          <div>
+            <div>
+              <h2>High Score: <span class="score">0 </span></h2>
+            </div>
+          </div>
+          <div class="timer">
+            <div class="timer-text">
+              <h3 id="timer">seconds left</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
