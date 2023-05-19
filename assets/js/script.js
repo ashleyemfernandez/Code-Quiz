@@ -76,8 +76,8 @@ let questions = [
 }
 
 ]
-let highScore = JSON.parse(localStorage.getItem("High Score"))
-document.querySelector(".score").innerText= highScore.initials + "-" + highScore.time
+let highScore = JSON.parse(localStorage.getItem("High Score")) ||[]
+document.querySelector(".score").innerText= highScore?.initials + "-" + highScore?.time
 const lastQuestion = question.length - 1; //starting with first question and index last
 let runQuestion = 0;
 
